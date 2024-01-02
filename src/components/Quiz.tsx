@@ -42,7 +42,7 @@ const Quiz = () => {
   return (
     <Container sx={{ padding: "1rem" }} maxWidth="sm">
       <Typography m={"2rem 0"}>Quiz</Typography>
-      <Typography variant="h3">
+      <Typography variant="h4">
         {count + 1} - {words[count]?.word}
       </Typography>
       <FormControl>

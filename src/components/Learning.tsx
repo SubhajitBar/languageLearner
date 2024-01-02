@@ -73,7 +73,7 @@ const Learning = () => {
       </Button>
 
       <Typography m={"2rem 0"}>Learning Made Easy</Typography>
-      <Stack direction={"row"} spacing={"1rem"}>
+      <Stack direction={"row"} flexWrap={"wrap"} spacing={"1rem"}>
         <Typography variant="h4">
           {count + 1}-{words[count]?.word}
         </Typography>

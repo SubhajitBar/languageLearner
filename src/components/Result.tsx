@@ -30,14 +30,14 @@ const Result = () => {
 
   return (
     <Container>
-      <Typography variant="h3" color={"primary"} m={"2rem 0"}>
+      <Typography variant="h4" color={"primary"} m={"2rem 0"}>
         Result
       </Typography>
       <Typography m={"1rem"} variant="h6">
         You got {correctAns} right out of {words?.length}
       </Typography>
 
-      <Stack direction={"row"} justifyContent={"space-evenly"}>
+      <Stack direction={"row"} flexWrap={"wrap"} justifyContent={"space-evenly"}>
         <Stack>
           <Typography m={"1rem 0"} variant="h5">
             Your Answer

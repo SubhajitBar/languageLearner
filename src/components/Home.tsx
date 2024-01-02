@@ -29,21 +29,23 @@ const Home = () => {
 
   return (
     <Container maxWidth={"sm"}>
-      <Typography variant="h3" p={"2rem"} textAlign={"center"}>
+      <Typography variant="h3" p={"2rem"} mt={"2rem"} textAlign={"center"} sx={{fontSize:"2.5rem"}}>
         Welcome, Begin Your Jouney of Learning New Languages
       </Typography>
       <Stack
         direction={"row"}
         p={"2rem"}
-        spacing={"2rem"}
+        spacing={"2vmax"}
         alignItems={"center"}
         justifyContent={"center"}
+        flexWrap={"wrap"}
       >
         {languages.map((i) => (
           <Button
             onClick={()=>languageSelectHandler(i.code)}
             variant="contained"
             key={i.code}
+            sx={{fontSize:"1.5vmax", padding:"8px 13px", margin:"10px !important"}}
           >
             {i.name}
           </Button>
